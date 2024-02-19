@@ -3,6 +3,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import {Animals } from '../HomeScreen';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { PRIMARY_COLOR } from '../../../commons/constantsColor'
+import { ModalAdopcion } from './ModalAnimals';
 
 
 interface Props{
@@ -27,7 +28,7 @@ export const CardAnimals= ({animals}:Props) => {
                     style={styles.animalImage}/>
                     <View style={styles.animalInfo}>
                         <Text style={styles.animalName}>{animals.name}</Text>
-                        <Text style={styles.animalText}>{`Raza: ${animals.raza}`}</Text>
+                        <Text style={styles.animalText}>{`Especie: ${animals.especie}`}</Text>
                         <Text style={styles.animalText}>{`Sexo: ${animals.sexo}`}</Text>
                         <Text style={styles.animalText}>{`Tamaño: ${animals.tamaño}`}</Text>
                         <Text style={styles.animalText}>{`Edad: ${animals.edad}`}</Text>
@@ -38,7 +39,7 @@ export const CardAnimals= ({animals}:Props) => {
                 </View>
             </View>
         </TouchableOpacity>
-      {/*<ModalProduct product={product} isVisible={showModal} changeVisible={()=>setShowModal(!showModal)}/>*/}
+      <ModalAdopcion animals={animals} isVisible={showModal} changeVisible={()=>setShowModal(!showModal)}/>
     </View>
   )
 }

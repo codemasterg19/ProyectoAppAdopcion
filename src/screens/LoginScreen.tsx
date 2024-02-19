@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { StatusBar, Text, View, StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
-import { TitleComponent } from '../components/TitleComponent'
+
 import { ERROR_COLOR, PRIMARY_COLOR } from '../commons/constantsColor'
-import { BodyComponent } from '../components/BodyComponent'
+
 import { InputComponent } from '../components/InputComponent';
 import { ButtonComponent } from '../components/ButtonComponent';
 import Snackbar from 'react-native-snackbar';
@@ -18,7 +18,7 @@ export interface LoginForm{
     hasError: boolean;
 }
 
-//interface Props extends StackScreenProps<any,any>{};
+
 interface LoginProps{
   users:User[]
 }

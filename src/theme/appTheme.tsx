@@ -50,7 +50,7 @@ export const stylesGlobal=StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         textAlign:'center',
-        color: 'black',
+        color: '#4CAF50',
         margin:20,
         padding:10,
 

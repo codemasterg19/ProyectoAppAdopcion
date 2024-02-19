@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native'
-import { TitleComponent } from '../components/TitleComponent'
-import { BodyComponent } from '../components/BodyComponent'
+
 import { stylesGlobal } from '../theme/appTheme';
 import { InputComponent } from '../components/InputComponent'
 import { ButtonComponent } from '../components/ButtonComponent'

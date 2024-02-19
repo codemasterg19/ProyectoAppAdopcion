@@ -6,6 +6,8 @@ import { RegisterScreen } from '../screens/RegisterScreen';
 import { useState } from 'react';
 import { HomeScreen } from '../screens/HomeScreen/HomeScreen';
 import { PerfilScreen } from '../screens/HomeScreen/PerfilScreen';
+import { GoogleFormsScreen } from '../screens/HomeScreen/GoogleFormsScreen';
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 //Data prueba
 export interface User{
@@ -45,8 +47,27 @@ function MyTabs() {
       tabBarInactiveTintColor: 'gray', 
    }}
   >
-      <Tab.Screen name="Home" component={HomeScreen} options={{headerShown:false}}/>
-      <Tab.Screen name="Settings" component={PerfilScreen} options={{headerShown:false}}/>
+      <Tab.Screen name="Adopciones" component={HomeScreen} options={{
+               
+               tabBarIcon: ({ color, size }) => (
+                 <Icon name="home" color= '#4CAF50' size={30} /> // Puedes ajustar los valores según tus preferencias
+               ),
+        
+        headerShown:false}} />
+      <Tab.Screen name="Mi Perfil" component={PerfilScreen} options={{
+              tabBarIcon: ({ color, size }) => (
+              <Icon name="person" color='#4CAF50' size={30} /> // Puedes ajustar los valores según tus preferencias
+              ),
+        
+        headerShown:false}}/>
+      
+      <Tab.Screen name="Formulario" component={GoogleFormsScreen} options={{
+               
+              tabBarIcon: ({ color, size }) => (
+              <Icon name="description" color= '#4CAF50' size={30} /> // Puedes ajustar los valores según tus preferencias
+              ),
+        
+        headerShown:false}}/>
     </Tab.Navigator>
   );
 }
