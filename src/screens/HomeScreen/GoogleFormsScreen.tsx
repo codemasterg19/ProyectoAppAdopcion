@@ -6,10 +6,10 @@ import { PRIMARY_COLOR } from '../../commons/constantsColor';
 export const GoogleFormsScreen = () => {
 
   const openGoogleForms = () => {
-    // Reemplaza la URL del formulario de Google Forms con la URL de tu propio formulario
-    const googleFormsUrl = 'https://forms.gle/jy7maa6iftgPZ29W8'; // URL de tu formulario
+   
+    const googleFormsUrl = 'https://forms.gle/jy7maa6iftgPZ29W8'; 
 
-    // Abre la URL en el navegador web del dispositivo
+
     Linking.openURL(googleFormsUrl)
       .catch((err) => console.error('Error al abrir la URL', err));
   };

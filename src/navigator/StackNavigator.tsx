@@ -50,13 +50,13 @@ function MyTabs() {
       <Tab.Screen name="Adopciones" component={HomeScreen} options={{
                
                tabBarIcon: ({ color, size }) => (
-                 <Icon name="home" color= '#4CAF50' size={30} /> // Puedes ajustar los valores según tus preferencias
+                 <Icon name="home" color= '#4CAF50' size={30} /> 
                ),
         
         headerShown:false}} />
       <Tab.Screen name="Mi Perfil" component={PerfilScreen} options={{
               tabBarIcon: ({ color, size }) => (
-              <Icon name="person" color='#4CAF50' size={30} /> // Puedes ajustar los valores según tus preferencias
+              <Icon name="person" color='#4CAF50' size={30} /> 
               ),
         
         headerShown:false}}/>
@@ -64,7 +64,7 @@ function MyTabs() {
       <Tab.Screen name="Formulario" component={GoogleFormsScreen} options={{
                
               tabBarIcon: ({ color, size }) => (
-              <Icon name="description" color= '#4CAF50' size={30} /> // Puedes ajustar los valores según tus preferencias
+              <Icon name="description" color= '#4CAF50' size={30} /> 
               ),
         
         headerShown:false}}/>

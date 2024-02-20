@@ -15,19 +15,15 @@ interface Props{
 export const ModalAdopcion = ({animals, isVisible, changeVisible}:Props) => {
     //Hook para la dimensión de mi pantalla
     const {width}=useWindowDimensions();
-    //hook para el valor de la cantidad 
-    const [quantity, setQuantity] = useState(1)
-    //funcion para trabajar la cantidad 
-    const handlerChangeQunatity=(value: number)=>{
-        setQuantity
-    }
+
+
 
 
 
     const handlePostular = () => {
-        // Lógica para la postulación
+        
         changeVisible();
-        // Muestra una alerta después de la postulación exitosa
+        // alerta
         Alert.alert(
             'Postulación Exitosa',
             `Se ha postulado en la adopción de ${animals.name} exitosamente.`,
@@ -35,9 +31,9 @@ export const ModalAdopcion = ({animals, isVisible, changeVisible}:Props) => {
                 {
                     text: 'OK',
                     onPress: () => {
-                        // Acción a realizar después de que el usuario presiona "OK"
+                        
                         console.log('Usuario presionó OK en la alerta');
-                        // Cierra el modal
+                        
                         
                     },
                 },
@@ -47,9 +43,9 @@ export const ModalAdopcion = ({animals, isVisible, changeVisible}:Props) => {
     };
 
     const handlePatrocinar = () => {
-        // Lógica para la postulación
+        
         changeVisible();
-        // Muestra una alerta después de la postulación exitosa
+        // Alerta
         Alert.alert(
             
             `Para ayudar a  ${animals.name} puedes donar en las siguiente cuenta.`,
@@ -59,9 +55,9 @@ export const ModalAdopcion = ({animals, isVisible, changeVisible}:Props) => {
                 {
                     text: 'OK',
                     onPress: () => {
-                        // Acción a realizar después de que el usuario presiona "OK"
+                       
                         console.log('Usuario presionó OK en la alerta');
-                        // Cierra el modal
+                        
                         
                     },
                 },
